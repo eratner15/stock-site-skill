@@ -72,6 +72,7 @@ Sections in order:
 **Valuation Summary Cards (3):**
 - DCF | EV/EBITDA Cross-Check | Blended Fair Value (gold border)
 - Each shows: price, upside %, method description
+- **Smart Blend:** DCF/multiples weight auto-adjusts based on TV% concentration (50/50 standard, 40/60 at 85-95% TV, 30/70 at >95% TV). Dynamic label shows actual weights. Prevents capex-heavy companies from being unfairly penalized by temporarily negative FCFs.
 - Blended card includes **Implied P/E, FCF Yield, and 2-Year Annualized IRR** (color-coded)
 
 **Metrics Output Bar:** 8-column grid, auto-updates on slider change

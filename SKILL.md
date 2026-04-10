@@ -278,7 +278,11 @@ Follow the AMZN pattern (the most advanced implementation):
   - Street = consensus estimates (always include this)
 - **DCF valuation** with 5-year FCF + terminal value
 - **EV/EBITDA cross-check** on forward EBITDA
-- **Blended fair value** (50% DCF + 50% multiples)
+- **Blended fair value** with **smart blend** — adjusts DCF/multiples weight based on terminal value concentration:
+  - TV% < 85%: standard 50/50 blend
+  - TV% 85-95%: 40% DCF / 60% multiples (growth company)
+  - TV% > 95%: 30% DCF / 70% multiples (capex-distorted, e.g., AMZN)
+  - Dynamic label shows actual weights used. Applies to valuation cards, scenario table, prob-weighted EV, and reverse-DCF
 - **Multi-year earnings bridge** with:
   - Segment revenue and growth rates
   - Segment operating income and margins
